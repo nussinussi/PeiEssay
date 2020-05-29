@@ -4,43 +4,64 @@
 Bei dem Patent Planta wird ein freischwingendes Schaltnetzteil beschrieben. Dieses Netzteil enthält folgende Baugruppen, ein Transformator mit einer Leistungswicklung zur Bereitstellung einer Ausgangsspannung, eine Treiberwicklung zur Bereitstellung einer Schaltspannung und eine Reglerwicklung zur Bereitstellung einer Messspannung. Die Ausgangsspannung kann mit Hilfe einer Abschaltspannung von einem Transistor geändert werden. Ein Gleichrichter empfängt die Messspannung und erzeugt eine für die Messspannung repräsentative Steuerspannung. Ein erster Spannungsteiler empfängt die Steuerspannung und schaltet den Schalttransistor ein, wenn die Sperrspannung über einem ersten Schwellwert liegt. Ein zweiter Spannungsteiler empfängt die Steuerspannung und schaltet den Schalttransistor aus, wenn die Sperrspannung unter einem zweiten Schwellwert liegt. Mit diesem Schaltnetzteil wird mit einer Primärsteuerung eine wirksame Spannungsstabilisierung mit einem guten Wirkungsgrad geboten.
 
 
-\subsection{Schema}\label{subsec:Schema}
+\subsection{Schema Patent Palata}\label{subsec:Schema}
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\textwidth]{graphics/Schema}
+\rotatebox{-90}{	\includegraphics[width=0.7\textwidth]{graphics/Schema}}
 	\caption{Schema}
 	\label{fig:Schema}
 \end{figure} 
 \newpage
 \subsection{Claim-Chart}\label{sec:Claim-Chart}
+In dieser Claim-Chart wird ein Patentverlezugsprozess durchgeführt, nachfolgendes Gerät, welches nach Schema \ref{fig:CCHSchema} und \ref{fig:CCHSchema2} enspricht wurde analysiert.\\
+\\
+
 \begin{tabular}{|l|l|l|}
 	\hline 
 \textbf{US5390100 Planta Claim 1}& &    \\ 
 	\hline 
-Ein frei schwingendes Schaltnetzteil, bestehend aus:	&  &  \\ 
+ A freely oscillating switched-mode &A & Netzteil ist getaktet, Synchroner oder\\
+ power supply comprising:	&  &freilaufender Betrieb möglich  \\ 
 	\hline 
-einem Transformator mit einer Primärwicklung, einer Sekundärwicklung zur& A &  \\ Bereitstellung einer Ausgangsspannung und einer Regelwicklung zur&  &  \\
-Bereitstellung einer Messspannung & &	 \\
+a transformer having a primary winding,& B1 &primary winding\\
+a secondary winding for providing &B2,B3 &secondary winding\\ 
+an output voltage, and a regulating& B4&regulating winding\\
+winding for providing a& & \\
+measuring voltage; & &	 \\
 	\hline 
-einen Schalttransistor mit einer Abschaltspannung, der mit der & B & \\
-Primärwicklung gekoppelt ist, um den Strom darin zu steuern	&  &  \\ 
+a switching transistor, having a cutoff& C1 & Mosfet \\
+voltage and being coupled to said  &  & \\
+primary winding for controlling & & \\
+current therein;	&  &  \\ 
 	\hline 
-Mittel zum Erzeugen einer mit der Messspannung gekoppelten Steuerspannung	& C &  \\ 
+means for generating a control voltage& D1 & Voltage monitor and logic\\
+coupled to said measuring voltage;	&  &  \\ 
 	\hline 
-erste Rückkopplungsmittel zum Variieren der Abschaltspannung als Reaktion & D &\\
-auf die Steuerspannung, wenn die Steuerspannung einen ersten Schwellenwert & &\\
-überschreitet	&  &  \\ 
+first feedback means for varying said & E1 &Undervoltage Detection\\
+cutoff voltage responsive to said  &  &\\
+control voltage when said control & &\\
+voltage exceeds a first threshold value;  & &\\ 
 	\hline 
-eine zweite Rückkopplungseinrichtung, die auf die Steuerspannung anspricht, & E &\\
-um den Burst-Modus-Betrieb des Schalttransistors einzuleiten, wenn die & &\\
-Steuerspannung einen zweiten Schwellenwert überschreitet.	&  &  \\ 
+second feedback means responsive to& F&\\
+said control voltage for initiating  &  &\\
+burst mode operation of said switching& & \\
+transistor when said control voltage & &\\
+exceeds a second threshold value.	&  &  \\ 
 	\hline 
 
 \end{tabular} 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\textwidth]{graphics/CCHSchema}
-	\caption{Claim Chart Schema}
+	\includegraphics[trim = 20mm 20mm 50mm 50mm, clip, width=1\textwidth]{graphics/SchemaClaim}
+	\caption{Claim Chart Schema Schaltnetzteil}
 	\label{fig:CCHSchema}
+\end{figure} 
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[trim = 1mm 142mm 1mm 20mm, clip, width=1\textwidth]{graphics/SchemaClaim2}
+	\caption{Claim Chart Schema TOP257YN}
+	\label{fig:CCHSchema2}
 \end{figure} 
