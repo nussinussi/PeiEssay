@@ -15,6 +15,7 @@ Bei dem Patent Planta wird ein freischwingendes Schaltnetzteil beschrieben. Dies
 In dieser Claim-Chart wird ein Patentverlezugsprozess durchgeführt, nachfolgendes Gerät, welches nach Schema \ref{fig:CCHSchema} und \ref{fig:CCHSchema2} enspricht wurde analysiert.\\
 \\
 
+\begin{table}[htbp]
 \begin{tabular}{|l|l|l|}
 	\hline 
 \textbf{US5390100 Planta Claim 1}& &    \\ 
@@ -47,8 +48,12 @@ burst mode operation of said switching& & \\
 transistor when said control voltage & &\\
 exceeds a second threshold value.	&  &  \\ 
 	\hline 
+\end{tabular}
+\caption{Claim Chart Tabelle}
+\label{tab:Claim} 
+\end{table}
 
-\end{tabular} 
+
 
 
 
@@ -66,3 +71,33 @@ exceeds a second threshold value.	&  &  \\
 	\caption{Claim Chart Schema TOP257YN}
 	\label{fig:CCHSchema2}
 \end{figure} 
+
+\subsection{Messungen}\label{sec:Messungen}
+
+In der Messtabelle \ref{fig:Schalttransistor} ist ersichtlich, dass der Schalttransistor bei unterschiedlichen Belastungen anders agiert. Somit ist die Einschaltdauer (On-time) ohne Belastung bei 1.8us, wobei sie wiederum bei einer Belastung von 50W bei 5.1us liegt. Auch ersichtlich ist dabei die jeweilige Messspannung (measuring voltage) gemäss \ref{tab:Claim}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphics/Messtabelle}
+	\caption{Messtabelle der Einschaltzeiten des Schalttransistors}
+	\label{fig:Schalttransistor}
+\end{figure} 
+
+In Abbildung \ref{fig:cutoff} ist das Schaltverhalten des Schalttransistors (cutoff voltage) in Abhängigkeit der Kontrollspannung (control voltage) gemäss Tabelle \ref{tab:Claim} zu sehen. \\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{graphics/cutoff}
+	\caption{Messung der cutoff voltage, in Abhängigkeit der control voltage}
+	\label{fig:cutoff}
+\end{figure} 
+
+Mit diesen Messungen ist es ersichtlich, dass die Ausgangsspannung (output voltage) von 18V gemäss \ref{fig:CCHSchema} über eine Messpannung (measuring voltage)leistungsangepasst ist.
+
+\newpage
+
+
+
+ 
+ 
+ 
